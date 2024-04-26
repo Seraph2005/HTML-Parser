@@ -7,16 +7,14 @@ public class Country {
     private double area;
 
     public Country(String name, String capital, int population, double area) {
-        //TODO
-
+        this.name = name;
+        this.capital = capital;
+        this.population = population;
+        this.area = area;
     }
 
     public String getName() {
         return name;
-    }
-
-    public String getCapital() {
-        return capital;
     }
 
     public int getPopulation() {
@@ -29,7 +27,10 @@ public class Country {
 
     @Override
     public String toString() {
-        //TODO
+        System.out.println(name);
+        System.out.println("Capital: " + capital);
+        System.out.println("Populaion: " + population);
+        System.out.println("Area(Km^2): " + area + "\n");
         return "";
     }
 
